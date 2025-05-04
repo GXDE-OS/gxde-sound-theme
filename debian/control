@@ -1,0 +1,16 @@
+Source: gxde-sound-theme
+Section: x11
+Priority: optional
+Maintainer: shenmo <shenmo@spark-app.store>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.8.3
+Homepage: http://www.gxde.top/
+
+Package: gxde-sound-theme
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: deepin-sound-theme(=15.15)
+Replaces: deepin-sound-theme(<=15.15)
+Conflicts: deepin-sound-theme(<=15.15)
+Description: GXDE sound
+ This package contains the GXDE sound theme.
