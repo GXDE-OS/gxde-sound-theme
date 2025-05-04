@@ -1,5 +1,5 @@
-gxde-sound-theme (15.15) unstable; urgency=low
+gxde-sound-theme (15.15u1) unstable; urgency=low
 
-  * Auto Version update.
+  * 修改默认通知音效
 
  -- shenmo <shenmo@spark-app.store>  Tue, 31 Oct 2017 03:10:37 +0000
