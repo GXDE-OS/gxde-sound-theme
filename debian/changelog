@@ -1,3 +1,9 @@
+gxde-sound-theme (25.0u1) UNRELEASED; urgency=medium
+
+  * 修复开启了关机音效但关机无关机音效的问题
+
+ -- gfdgd_xi <3025613752@qq.com>  Wed, 12 Aug 2026 17:42:40 +0800
+
 gxde-sound-theme (15.15u1) unstable; urgency=low
 
   * 修改默认通知音效
