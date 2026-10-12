@@ -1,0 +1,22 @@
+# Maintainer: CharOfString <root@charofstring.cc>
+pkgname=gxde-sound-theme-git
+pkgver=25.0u1
+pkgrel=1
+pkgdesc='GXDE sound theme'
+arch=('any')
+url="https://github.com/GXDE-OS/gxde-sound-theme"
+license=('GPL-3.0-or-later')
+makedepends=('git')
+provides=('gxde-sound-theme' 'deepin-sound-theme')
+conflicts=('gxde-sound-theme' 'deepin-sound-theme')
+source=()
+sha512sums=()
+
+# 直接使用 PKGBUILD 所在的 git 仓库作为源码 ・ Build from the git checkout this PKGBUILD lives in.
+_srcroot() {
+  git -C "$startdir" rev-parse --show-toplevel
+}
+
+package() {
+  make -C "$(_srcroot)" DESTDIR="$pkgdir" install
+}
