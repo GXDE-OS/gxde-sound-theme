@@ -1,5 +1,5 @@
 # Maintainer: CharOfString <root@charofstring.cc>
-pkgname=gxde-sound-theme-git
+pkgname=gxde-sound-theme
 pkgver=25.0u1
 pkgrel=1
 pkgdesc='GXDE sound theme'
@@ -7,8 +7,9 @@ arch=('any')
 url="https://github.com/GXDE-OS/gxde-sound-theme"
 license=('GPL-3.0-or-later')
 makedepends=('git')
-provides=('gxde-sound-theme' 'deepin-sound-theme')
-conflicts=('gxde-sound-theme' 'deepin-sound-theme')
+provides=('deepin-sound-theme' "gxde-sound-theme-git=$pkgver")
+conflicts=('deepin-sound-theme' 'gxde-sound-theme-git')
+replaces=('gxde-sound-theme-git')
 source=()
 sha512sums=()
 
